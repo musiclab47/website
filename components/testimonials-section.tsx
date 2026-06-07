@@ -1,47 +1,46 @@
 "use client"
 
 import { useState, useEffect, useRef } from "react"
-import Image from "next/image"
 
 const testimonials = [
   {
-    name: "Mara Vale",
+    name: "Sidhu Moosewala",
     role: "Recording Artist",
     content: "Music Lab took my bedroom demos and turned them into a platinum record. They believed before anyone.",
-    avatar: "/placeholder.svg?height=48&width=48",
+    avatar: "SM",
   },
   {
-    name: "Darnell Brooks",
+    name: "Priya Sharma",
     role: "Producer",
     content: "The studios, the team, the freedom. This is the first label that actually feels built for artists.",
-    avatar: "/placeholder.svg?height=48&width=48",
+    avatar: "PS",
   },
   {
-    name: "Lucia Romano",
+    name: "Harpreet Kaur",
     role: "Singer-Songwriter",
     content: "Transparent royalties and I kept my masters. I finally trust the people behind my music.",
-    avatar: "/placeholder.svg?height=48&width=48",
+    avatar: "HK",
   },
 ]
 
 const testimonials2 = [
   {
-    name: "The Northern Lights",
+    name: "Gurpreet Singh",
     role: "Band",
     content: "From a local gig to a world tour in 18 months. Their A&R team is on another level.",
-    avatar: "/placeholder.svg?height=48&width=48",
+    avatar: "GS",
   },
   {
-    name: "VICE CITY",
+    name: "Jasmine Kaur",
     role: "Electronic Duo",
     content: "Our single went viral and the distribution had us on every platform overnight. Unreal support.",
-    avatar: "/placeholder.svg?height=48&width=48",
+    avatar: "JK",
   },
   {
-    name: "Aisha Kone",
+    name: "Arjun Sharma",
     role: "Songwriter",
     content: "Real creative freedom and a team that respects the art. Best decision of my career.",
-    avatar: "/placeholder.svg?height=48&width=48",
+    avatar: "AS",
   },
 ]
 
@@ -147,13 +146,9 @@ export function TestimonialsSection() {
                   className="flex-shrink-0 w-full sm:w-[400px] bg-card border border-border rounded-2xl p-8 border-none py-4"
                 >
                   <div className="flex items-start gap-4 mb-6">
-                    <Image
-                      src={testimonial.avatar || "/placeholder.svg"}
-                      alt={testimonial.name}
-                      width={48}
-                      height={48}
-                      className="w-12 h-12 rounded-full object-cover"
-                    />
+                    <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
+                      <span className="text-sm font-bold text-primary-foreground">{testimonial.avatar}</span>
+                    </div>
                     <p className="text-foreground leading-relaxed flex-1 text-lg">
                       &ldquo;{testimonial.content}&rdquo;
                     </p>
@@ -187,13 +182,9 @@ export function TestimonialsSection() {
                   className="flex-shrink-0 w-full sm:w-[400px] bg-card border border-border rounded-2xl p-8 border-none py-4"
                 >
                   <div className="flex items-start gap-4 mb-6">
-                    <Image
-                      src={testimonial.avatar || "/placeholder.svg"}
-                      alt={testimonial.name}
-                      width={48}
-                      height={48}
-                      className="w-12 h-12 rounded-full object-cover"
-                    />
+                    <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
+                      <span className="text-sm font-bold text-primary-foreground">{testimonial.avatar}</span>
+                    </div>
                     <p className="text-lg text-foreground leading-relaxed flex-1">
                       &ldquo;{testimonial.content}&rdquo;
                     </p>

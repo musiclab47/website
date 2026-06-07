@@ -5,7 +5,7 @@ import Image from "next/image";
 export function Footer() {
   return (
     <div className="relative">
-  <div className="absolute -top-[20vw]   left-0 right-0 w-full h-[50vw] z-0 overflow-hidden">
+  <div className="absolute -top-[20vw]   left-0 right-0 w-full h-[50vw] z-0 overflow-hidden hidden md:block">
         <Image
           src="/images/footer-bg.png"
           alt="Concert crowd"
